@@ -5,7 +5,7 @@
 Note that:
 
 * There may be certain style combinations which don't work like they did in 6.x.
-* Using `lv_style_compat` will hinder your ability to make use of the new style optimizations that LittlevGL 7 has.
+* Using `lv_style_compat` will hinder your ability to make use of the new style optimizations that LittlevGL 7 has. What this means in practical terms is that using a "legacy" style with this module will likely consume more memory than rewriting the code in question to use v7 styles.
 
 ## Example
 
