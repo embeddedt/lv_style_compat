@@ -16,7 +16,10 @@ lv_obj_t * btn = lv_btn_create(lv_scr_act(), NULL);
 static lv_style_t style;
 lv_style_init(&style);
 
+static lv_legacy_style_t v6_style;
+
 lv_legacy_style_init();
+lv_legacy_style_convert(&style, LV_STATE_DEFAULT, &v6_style);
 lv_legacy_style_convert(&style, LV_STATE_DEFAULT, &lv_style_btn_rel);
 lv_legacy_style_convert(&style, LV_STATE_PRESSED, &lv_style_btn_pr);
 lv_legacy_style_convert(&style, LV_STATE_CHECKED, &lv_style_btn_tgl_rel);
